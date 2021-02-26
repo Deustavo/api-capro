@@ -17,11 +17,6 @@ def SearchCulture(yesterday, yesterday_1, yesterday_diff, last_week, last_month,
     return { 'result': float(resultStr) }
 
 
-@app.route('/', methods=['GET'])
-def home():
-    return Responses(200, "Bem vido ao Capro" )
-
-
 # seta a rota e chama a função de buscar a cultura
 @app.route("/search", methods=["POST"])
 def SearchCultureRequest():
