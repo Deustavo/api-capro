@@ -3,7 +3,7 @@ from flask_cors import CORS
 import pickle
 import json
 
-app = Flask("Capro")
+app = Flask(__name__)
 CORS(app)
 
 # função para fazer busca no banco
