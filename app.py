@@ -18,7 +18,7 @@ def SearchCulture(yesterday, yesterday_1, yesterday_diff, last_week, last_month,
 
 
 @app.route('/', methods=['GET'])
-@def home():
+def home():
     return 'Bem vindo ao capro'
 
 
