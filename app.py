@@ -19,7 +19,7 @@ def SearchCulture(yesterday, yesterday_1, yesterday_diff, last_week, last_month,
 
 @app.route('/', methods=['GET'])
 def home():
-    return {message: 'Bem vindo ao capro'}
+    return return Responses(200, "Bem vido ao Capro" )
 
 
 # seta a rota e chama a função de buscar a cultura
@@ -60,5 +60,3 @@ def Responses(status, message, name_content=False, content=False):
         response[name_content] = content
 
     return response
-
-app.run()
